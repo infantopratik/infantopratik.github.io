@@ -20,7 +20,7 @@ $.ajax(url , {
 		console.log("Success");
 	},
 	error : function(textStatus){
-		console.log("Failed");
+		console.log(textStatus);
 	}
 });
 

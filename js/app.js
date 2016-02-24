@@ -13,7 +13,7 @@
 	
 });  */
 
-var url = "https://api.github.com/user?acess_token=a17535b1405573b0096810139e67bfd6009b037a/repos/ARAVINDRAJ1138/hunter/contents/hunter/lar";
+var url = "https://api.github.com/user?acess_token=a17535b1405573b0096810139e67bfd6009b037a/repos/Raguram-Barathan/Guvi/contents/Guvi/Reverse%20a%20string";
 $.ajax(url , {
 	dataType : "json",
 	success : function(response){
@@ -44,6 +44,8 @@ $.get( "https://api.github.com/repos/AnushaRaghunadhan/reversing-a-string/conten
    https://raw.githubusercontent.com/:owner/:repo/master/:path
    
    https://raw.githubusercontent.com/AnushaRaghunadhan/reversing-a-string/master/reversing-a-string/rev
+   
+   https://github.com/Raguram-Barathan/Guvi/blob/master/Reverse%20a%20string
    
    
 });*/

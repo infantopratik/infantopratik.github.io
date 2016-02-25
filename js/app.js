@@ -17,7 +17,7 @@ var url = "https://api.github.com/user?acess_token=a17535b1405573b0096810139e67b
 $.ajax(url , {
 	dataType : "json",
 	success : function(response){
-		console.log("HULU");
+		console.log("");
 	},
 	error : function(textStatus){
 		console.log(textStatus);

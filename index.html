@@ -21,8 +21,27 @@
 					console.log(newprogram);
 					$('#program').html(newprogram);
 					var line = newprogram.split("\n");
-					$('#count').html("The length of this program is "+line.length+".");
+					$('#count').html("The number of lines in this program is "+line.length+".");
 					console.log(line.length);
+					var fileExt = content.split('.').pop();
+					if(fileExt === "cpp"){
+						fileExt = "C++";
+					}
+					else if (fileExt ==="c"){
+						fileExt = "C";
+					}
+					else if (fileExt ==="java"){
+						fileExt = "JAVA";
+					}
+					else if(fileExt ==="py"){
+						fileExt = "PYTHON";
+					} else {
+						fileExt = "";
+					}
+					if(fileExt === ""){
+					}else{
+						$('#lang').html("The above program is written in " +fileExt+ " language.")
+						}
 			});
 			});
 		}); //end ready
@@ -40,6 +59,7 @@
 		<pre id="program">
 		</pre>
 		<h4 id="count"></h4>
+		<h4 id="lang"></h4>
 	</div>
 </body>
 </html>

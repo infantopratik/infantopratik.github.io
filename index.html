@@ -11,6 +11,16 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body onload="myFunc()">
+		<div id="preloader">
+			<img src="images/loader_background.jpg"></img>
+			<svg>
+				<circle cx="100" cy="100" r="95" stroke="#d71f4f" stroke-width="10" />
+			</svg>
+			<div id="status">&nbsp;</div>
+			<div id="preload-back">
+				<h1>WELCOME TO <strong>ONE GAME</strong></h1>
+			</div>
+		</div>
 		
 		<div class="wrapper">
 		
@@ -49,10 +59,10 @@
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 					  <ul class="nav navbar-nav navbar-left">
-						<li><a href="index.php">Home</a></li>
-						<li><a href="about.php">About</a></li>
-						<li class="active"><a href="games.php">Games</a></li>
-						<li><a href="contact.php">Contact</a></li>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="games.html">Games</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					  </ul>
 					  <ul class="nav navbar-nav mediaicons">
 						<li><a href="#" class="fa fa-facebook"></a></li>
@@ -88,7 +98,13 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-							
+						<div id="container">
+							<img src="images/pendulum.png" width="160" height="200"></img>
+							<div class="oscillate wrapper2">       
+							</div>
+						</div>
+						<div id="date"></div>
+						<div id="days"></div>	
 					</div>
 				</div>
 				

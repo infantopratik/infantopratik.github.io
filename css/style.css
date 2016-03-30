@@ -172,7 +172,7 @@ nav {
 
 #text-container {
 	position: absolute;
-	top: 150px;
+	top: 140%;
 	width: 90%;
 }
 
@@ -271,7 +271,7 @@ nav {
 	display: block;
 	top: 10px;
 	left: 70px;
-	z-index: 99999;
+	z-index: 9;
 	font-family: "Comic Sans MS";
 	font-size: 5em;
 	color: #fff;

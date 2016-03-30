@@ -1,0 +1,313 @@
+/*    Preloader
+   ---------------*/
+body {
+    overflow: hidden;
+}
+
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0; /* change if the mask should have another color then white */
+    z-index:9999; /* makes sure it stays on top */
+}
+
+#preloader img {
+	width: 100%;
+	height: 100%;
+}
+
+#preloader svg {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin:-100px 0 0 -100px;
+	z-index:9999;
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url('../images/onelogo-final.gif'); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+	z-index:9999;
+}
+
+#preload-back {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: #000;
+	opacity: 0.5;
+	z-index: 999;
+}
+
+#preload-back h1 {
+	text-align:center;
+	padding-top:100px;
+	color: #fff;
+	opacity:0.9;
+}
+
+/*End of preloader*/
+
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+.wrapper2 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.navbar-menu {
+	position: absolute;
+	top: 68%;
+	left: 0;
+	width: 100%;
+	height: 5%;
+}
+
+nav {
+	height: 7%;
+}
+.nav-line {
+	position: fixed;
+	left: 0;
+	bottom: 50px;
+	height: 4%;
+	width: 100%;
+	background-color : #0eecba;
+	opacity: 0.65;
+}
+
+#myBtn {
+   position: fixed;
+   width: 80px;
+   height: 143px;
+   left: 47.5%;
+   bottom: 3%;
+   z-index:999;
+}
+
+#myBtn1 {
+   position: fixed;
+   width: 80px;
+   height: 143px;
+   left: 48.2%;
+   bottom: 22%;
+   z-index:99999;
+}
+
+#bg img{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.navbar {
+	opacity: 0.65;
+}
+.navbar-color {
+	float: left;
+	width: 20px;
+	height: 50px;
+	background-color: yellow;
+	padding-left: -10px;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+	color: #079bde;
+	font-weight:bold;
+}
+
+.mediaicons {
+	padding-left: 145px;
+}
+
+#logo {
+	position: absolute;
+	top: 50px;
+	left: 11%;
+}
+
+#logo img {
+	width: 80%;
+}
+
+/*Page texts
+-------------*/
+#intro-hero {
+	position: absolute;
+	top: 150px;
+	left: 10%;
+}
+
+#intro-hero h1 {
+	color: #bfbfbf;
+}
+#awesome {
+	color: #fff;
+}
+
+#soon {
+	color: #f41c5e;
+}
+
+#text-container {
+	position: absolute;
+	top: 150px;
+	width: 90%;
+}
+
+#text-container p {
+	color: #bfbfbf;
+	text-align: justify;
+}
+
+/* Arrows and line ball
+---------------------*/
+#leftarrow {
+	position: fixed;
+	top: 35%;
+	left: 0;
+	z-index:10;
+}
+#rightarrow {
+	position: fixed;
+	top: 35%;
+	right: 0;
+}
+
+#line {
+	position: fixed;
+	top: 39%;
+	left: 0;
+	width: 50%;
+	z-index:9;
+} 
+
+#ball {
+	position: absolute;
+	top: 38%;
+	left : 3%;
+	right: 48%;
+	z-index:9;
+}
+
+/* For the oscillations
+	--------------------*/
+
+	@-webkit-keyframes oscillation
+{
+	from
+	{
+		-webkit-transform:rotate(-9deg);
+	}
+	to{
+		-webkit-transform:rotate(9deg);
+	}
+}
+ 
+@-moz-keyframes oscillation
+{
+	from{
+		-moz-transform:rotate(-9deg);
+	}
+	to{
+		-moz-transform:rotate(9deg);
+	}
+}
+ 
+/*Pendulum
+-------------------------*/
+ #container img {
+	position:absolute;
+	top: -70px;
+	z-index:1;
+}
+ 
+.oscillate{  
+	-webkit-transform-origin:50% -40px;  
+	-moz-transform-origin:50% -40px;   
+	-webkit-animation: oscillation 1s ease-in-out infinite alternate;
+	-moz-animation: oscillation 1s ease-in-out infinite alternate;
+	background: url('../images/pendulum-pivot.png') no-repeat;
+	width: 50px; 
+	height:190px;
+	z-index:1;
+	position:absolute;
+	top:115px;
+	left:76px;
+}
+
+#date {
+	position: absolute;
+	display: block;
+	top: 180px;
+	left: 69px;
+	background-color: #fff;
+	z-index: 2;
+}
+
+#days {
+	position: absolute;
+	display: block;
+	top: 10px;
+	left: 70px;
+	z-index: 99999;
+	font-family: "Comic Sans MS";
+	font-size: 5em;
+	color: #fff;
+	background: transparent;
+}
+
+/* Modal Box
+---------------------*/
+
+#modalbox {
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	left:0;
+	bottom:11.5%;
+	background-color: #000;
+	opacity: 0.85;
+	z-index: 999999;
+}
+
+#modalbox p {
+	margin: 0 auto;
+	color: #bfbfbf;
+	width: 77.5%;
+	text-align: justify;
+}
+
+.clicknjoin {
+	color: red;
+}
+
+/* Media Queries
+------------------*/
+
+@media only screen and (max-width: 980px) {
+    #container {
+		display: none;
+	}
+}

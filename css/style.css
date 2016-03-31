@@ -103,7 +103,7 @@ nav {
    height: 143px;
    left: 47.5%;
    bottom: 3%;
-   z-index:999;
+   z-index:99;
 }
 
 #myBtn1 {
@@ -112,7 +112,7 @@ nav {
    height: 143px;
    left: 48.2%;
    bottom: 22%;
-   z-index:99999;
+   z-index:99;
 }
 
 #bg img{
@@ -143,7 +143,7 @@ nav {
 
 #logo {
 	position: absolute;
-	top: 50px;
+	top: 8%;
 	left: 11%;
 }
 
@@ -155,7 +155,7 @@ nav {
 -------------*/
 #intro-hero {
 	position: absolute;
-	top: 150px;
+	top: 23%;
 	left: 10%;
 }
 
@@ -204,7 +204,7 @@ nav {
 } 
 
 #ball {
-	position: absolute;
+	position: fixed;
 	top: 38%;
 	left : 3%;
 	right: 48%;
@@ -289,7 +289,7 @@ nav {
 	bottom:11.5%;
 	background-color: #000;
 	opacity: 0.85;
-	z-index: 999999;
+	z-index: 99;
 }
 
 #modalbox p {

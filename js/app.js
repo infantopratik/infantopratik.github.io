@@ -23,3 +23,7 @@ function goBack(){
 function goNext(){
 	window.history.forward();
 }
+
+$scope.text = function() {
+	console.log('test')
+}
